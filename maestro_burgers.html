@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>McDonald’s | Maestro Burgers </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Maestro Burgers in McDonald’s">
+    <meta name="keywords" content="maestro, burger, mcdonald's, fastfood krakow">
+    <meta name="author" content="Bartlomiej Zajdel">
+    <link rel="shortcut icon" href="Images/logo.png" />
+    <link rel="stylesheet" media="screen" href="Styles/style.css" />
+    <link href="./CSS/all.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/946efc978e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#home-button-menu-text').add('#home-button-menu-icon').add('#home-button-side-menu').click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#section1").offset().top
+                }, 1000);
+            });
+        });
+
+        $(document).ready(function () {
+            $('#details-button-menu-text').add('#details-button-menu-icon').add('#details-button-side-menu').click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#section2").offset().top
+                }, 1000);
+            });
+        });
+
+        $(document).ready(function () {
+            $('#about-button-menu-text').add('#about-button-menu-icon').add('#about-button-side-menu').click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#section3").offset().top
+                }, 1000);
+            });
+        });
+
+        $(document).ready(function () {
+            $('#contact-button-menu-text').add('#contact-button-menu-icon').add('#contact-button-side-menu').click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#section4").offset().top
+                }, 1000);
+            });
+        });
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() < 950) {
+                $('.side-menu-container').fadeOut(1000);
+                $('.menu-bar').fadeIn(1000);
+            } else {
+                $('.menu-bar').fadeOut(1000);
+                $('.side-menu-container').fadeIn(1000);
+            }
+        });
+    </script>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .side-menu-container,
+        .side-menu,
+        .side-menu>a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+        }
+
+        .side-menu-container {
+            position: fixed;
+            height: 100vh;
+            left: 0px;
+        }
+
+        .side-menu>a {
+            margin: 5px 0px;
+            height: 40px;
+        }
+
+        .side-menu>a:hover {
+            margin: 5px 0px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body style="margin: 0px;">
+    <header class="page-header">
+        <nav class="nav-top">
+            <div class="logo chef">
+                <span class="logo-icon">
+                    <img class="image" src="Images/logo2.png">
+                </span>
+                <span class="logo-icon2">
+                    <img class="image" src="Images/logo.png">
+                </span>
+            </div>
+            <div class="menu-bar">
+                <div class="menu-text">
+                    <ul>
+                        <li><a id="home-button-menu-text" href="javascript:;">Home</a></li>
+                        <li><a id="details-button-menu-text" href="javascript:;">Details</a></li>
+                        <li><a id="about-button-menu-text" href="javascript:;">About</a></li>
+                        <li><a id="contact-button-menu-text" href="javascript:;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="menu-icons">
+                    <ul>
+                        <li><a id="home-button-menu-icon" href="javascript:;"><i class="fa-solid fa-house"></i></a></li>
+                        <li><a id="details-button-menu-icon" href="javascript:;"><i
+                                    class="fa-solid fa-file-lines"></i></a></li>
+                        <li><a id="about-button-menu-icon" href="javascript:;"><i class="fa-solid fa-info"></i></a></li>
+                        <li><a id="contact-button-menu-icon" href="javascript:;"><i class="fas fa-address-card"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+
+    <div class="side-menu-container">
+        <nav class="side-menu">
+            <a id="home-button-side-menu">
+                <div><i class="fa-solid fa-house"></i></div>
+            </a>
+            <a id="details-button-side-menu">
+                <div><i class="fa-solid fa-file-lines"></i></div>
+            </a>
+            <a id="about-button-side-menu">
+                <div><i class="fa-solid fa-info"></i></div>
+            </a>
+            <a id="contact-button-side-menu">
+                <div><i class="fas fa-address-card"></i></div>
+            </a>
+        </nav>
+    </div>
+
+    <div class="container-main container">
+        <div><img class="landing" src="Images/landpage.jpg" alt="Italian Trulli"></div>
+        <div class="container" id="section1">
+            <h1>GRILLED CHEESE</h1>
+            <div id="image-div">
+                <img class="image center" src="Images/grilledcheese.jpg" alt="Italian Trulli">
+                <a href="https://mcdonalds.pl/maestro-burger/">source</a>
+            </div>
+            <div style="text-align: left;">
+                <p>McDonald’s Maestro Burgers first started in late 2015 and the first countries to adopt the line were
+                    Sweden, Czech
+                    Republic and The Netherlands.</p>
+                <p>The Maestro range is predominantly European – you could call it the counterpart to Signature
+                    Collection.</p>
+                <p>There seems to be two characteristics of a Maestro Burger; either upmarket/gourmet ingredients, (in
+                    extreme cases)
+                    such as truffles, foie gras or premium cheeses/salads/toppings.</p>
+                <p>Another typical attribute of a Maestro burger is having an unconventional name – often named after
+                    people.</p>
+                <p>Sometimes there will also be a tweak on the accompanying fries – such as a thicker or skin-on fry
+                    different to the
+                    standard we see in the UK.</p>
+                <p><b>Enjoy!</b></p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="container" id="section2">
+            <h1>Details</h1>
+            <div class="half">
+                <div id="list1">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>Beef</li>
+                        <li>Bacon</li>
+                        <li>Camembert</li>
+                        <li>Cheddar</li>
+                        <li>Pickles</li>
+                    </ul>
+                </div>
+                <div id="list2">
+                    <h3>Allergens</h3>
+                    <ol>
+                        <li>wheat gluten</li>
+                        <li>milk</li>
+                        <li>charlock</li>
+                        <li>mustard</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="whole">
+                <div class="table">
+                    <h3>Nutrition</h3>
+                    <table>
+                        <tr>
+                            <th>Calories</th>
+                            <th>Carbohydrates</th>
+                            <th>Protein</th>
+                            <th>Fat</th>
+                        </tr>
+                        <tr>
+                            <th>755</th>
+                            <th>43</th>
+                            <th>47</th>
+                            <th>42</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="container" id="section3">
+            <h1>About</h1>
+            <h2>Our Food Philosophy</h2>
+            <p>At McDonald’s, we’re passionate about our food. We take great care that what we serve every day is safe,
+                great quality, offers choice and is produced in a responsible way. That means we use 100% pure beef
+                patties seasoned with just a pinch
+                of salt and pepper. It means our Egg McMuffin® is made with a freshly cracked egg. And, in the U.S., our
+                Filet-O-Fish® sandwich is made with whitefish sourced from sustainably managed wild-caught fisheries. It
+                means we use real buttermilk
+                in our Buttermilk Crispy Chicken and our Chicken McNuggets® are made with white meat chicken. Simply
+                put, it means we’re committed to always evolving what matters to you.
+            </p>
+            <h2>Pride in Preparation</h2>
+            <p>Every day, our kitchens work to prepare your food just the way you like it. That’s why we introduced
+                fresh beef in our Maestro burgers, cooked when you order, then served hot and deliciously juicy. Our
+                buns are freshly toasted hot and
+                golden to perfectly complement your favorite burgers and sandwiches.
+            </p>
+            <h2>Perfect Made Perfecter</h2>
+            <p>The melty cheese. The toasted sesame seed bun. The tangy pickle and crisp onion. And most important: the
+                quarter pound of 100% fresh beef that’s cooked when you order. That’s what makes our Maestro Grilled
+                Cheese the hottest and juiciest
+                yet. It’s perfect made perfecter. We serve our 100% fresh beef patties on a variety of burgers. Enjoy
+                the mouthwatering fresh flavor on our Maestro Grilled Cheese. Or try our Maestro BACON & CHEDDAR,
+                layered with thick-cut Applewood
+                smoked bacon or the Maestro GRAND CLASSIC, topped with Roma tomato slices and crisp shredded lettuce.
+            </p>
+        </div>
+        <hr>
+
+        <div class="container" id="section4">
+            <h1>Contact Us!</h1>
+            <h2>Address</h2>
+            <a
+                href="https://www.google.com/maps/dir/?api=1&destination=Restauracja+Mcdonalds+ul.%20Wadowicka%202A+Krak%C3%B3w">ul.
+                Wadowicka 2A Kraków, Małopolskie </a>
+            <h2>Phone number</h2>
+            <a href="tel:+48602115540">+48 602-115-540</a>
+            <h2>Website</h2>
+            <a href="https://mcdonalds.pl/restauracje/malopolskie/krakow/krakow-ul-wadowicka-2a/">Check for more
+                details!</a>
+        </div>
+        <hr>
+    </div>
+
+    <footer class="page-footer">
+        <p>Bartlomiej Zajdel, 2022 ©<br>
+    </footer>
+</body>
+
+</html>

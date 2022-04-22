@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.container-main {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    min-width: 500px;
+}
+
+.container {
+    background-color: #FFDD42;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: larger;
+    position: fixed;
+    height: 100px;
+    width: 70%;
+}
+
+.page-header {
+    background-color: #FEC208;
+    display: flex;
+    min-width: 500px;
+}
+
+.page-footer {
+    background-color: #FEC208;
+    min-width: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+table,
+th,
+td {
+    border: 0.5px black;
+    border-style: dotted;
+    border-collapse: collapse;
+}
+
+body {
+    font-family: 'Inter';
+    font-size: 18px;
+    color: black;
+}
+
+hr {
+    width: 80%;
+    border-top: 3.5px solid red;
+    margin-top: 20px;
+}
+
+.container h1 {
+    margin-top: 150px;
+}
+
+.half {
+    width: 45%;
+    margin: 2.5%;
+    display: flex;
+    text-align: center;
+}
+
+#section1 {
+    align-items: center;
+}
+
+#section2 {
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#list1 {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-color: #FEC208;
+    min-width: 150px;
+}
+
+#list2 {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-color: #FEC208;
+    min-width: 150px;
+}
+
+.half ul {
+    text-align: left;
+    display: inline-block;
+}
+
+.half ol {
+    text-align: left;
+    display: inline-block;
+}
+
+.whole {
+    width: 42.5%;
+    text-align: center;
+}
+
+.table {
+    background-color: #FEC208;
+    min-width: 310px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5%;
+    width: 30%;
+}
+
+#image-div {
+    background-color: #FEC208;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px black;
+    width: 510px;
+    padding: 10px;
+    text-align: center;
+}
+
+#image-div a {
+    color: #000;
+}
+
+#image-div a:hover {
+    color: red;
+}
+
+#image-div a:visited {
+    color: darkred;
+}
+
+#image-div a:focus {
+    color: green;
+}
+
+.image {
+    border-radius: 25px;
+    max-width: 500px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: darkred;
+}
+
+a:focus {
+    color: green;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav-top li {
+    float: left;
+}
+
+.nav-top li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-top {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.logo-icon .image {
+    height: 100px;
+    width: 100px;
+}
+
+.logo-icon2 .image {
+    height: 100px;
+    width: 100px;
+}
+
+.chef:hover {
+    position: static;
+    animation: moveX 2s;
+}
+
+.landing {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 1800px) {
+    span.logo-icon {
+        display: inline-block;
+        animation: moveY 3s;
+    }
+
+    span.logo-icon2 {
+        display: none;
+    }
+
+    div.menu-icons {
+        display: none;
+    }
+
+    div.menu-text {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 1800px) {
+    span.logo-icon {
+        display: none;
+    }
+
+    span.logo-icon2 {
+        display: inline-block;
+        animation: moveY 3s;
+    }
+
+    div.menu-text {
+        display: inline-block;
+    }
+
+    div.menu-icons {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    div.menu-icons {
+        display: inline-block;
+    }
+
+    div.menu-text {
+        display: none;
+    }
+}
+
+@keyframes moveX {
+    to {
+        right: 50%;
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes moveY {
+    to {
+        right: 50%;
+        transform: rotateY(360deg);
+    }
+}
